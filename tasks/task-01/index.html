@@ -490,29 +490,6 @@
       URL.revokeObjectURL(url);
     }
 
-    function exportPDF() {
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF('l', 'pt', 'a4');
-      
-      doc.setFontSize(18);
-      doc.text("IIT Patna My Update Portal - Task 01", 40, 40);
-      doc.setFontSize(12);
-      doc.text("Mentor: Dr. Priyanka Tripathi | Date: 30 September 2026", 40, 60);
-
-      const tableData = MASTER_DATASET.map(d => [d.iitName, d.facultyName, d.designation, d.subjectArea, d.department]);
-      
-      doc.autoTable({
-        startY: 80,
-        head: [['IIT', 'Faculty Name', 'Designation', 'Subject Area', 'Department']],
-        body: tableData,
-        theme: 'grid',
-        styles: { fontSize: 8 },
-        headStyles: { fillColor: [26, 26, 46] }
-      });
-
-      doc.save("IIT_Faculty_Master_Dataset.pdf");
-    }
-
     function printDataset() {
       window.print();
     }
