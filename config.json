@@ -16,8 +16,8 @@
     "completedTasks": 0,
     "inProgressTasks": 1,
     "notStartedTasks": 0,
-    "iitsCompleted": 4,
-    "totalFacultyRecords": 137
+    "iitsCompleted": 22,
+    "totalFacultyRecords": 479
   },
   "tasks": [
     {
@@ -29,7 +29,7 @@
       "description": "Compilation of IIT-wise Humanities and Social Sciences faculty information with their designations and broad subject areas across all IITs.",
       "path": "tasks/task-01",
       "datasetType": "Faculty Information Database",
-      "iitsIncluded": ["IIT Madras", "IIT Delhi", "IIT Bombay", "IIT Kanpur"]
+      "iitsIncluded": ["IIT Madras", "IIT Delhi", "IIT Bombay", "IIT Kanpur", "IIT Kharagpur", "IIT Roorkee", "IIT Hyderabad", "IIT Guwahati", "IIT (BHU) Varanasi", "IIT Indore", "IIT Mandi", "IIT Ropar", "IIT Bhubaneswar", "IIT Jammu", "IIT Tirupati", "IIT Palakkad", "IIT Patna", "IIT Gandhinagar", "IIT Dharwad", "IIT Bhilai", "IIT Goa", "IIT (ISM) Dhanbad"]
     }
   ]
 }

@@ -18,8 +18,62 @@ async function loadMasterDataset() {
         // Load IIT Kanpur data
         const kanpurData = loadKanpurData();
         
+        // Load IIT Kharagpur data
+        const kharagpurData = loadKharagpurData();
+        
+        // Load IIT Roorkee data
+        const roorkeeData = loadRoorkeeData();
+        
+        // Load IIT Hyderabad data
+        const hyderabadData = loadHyderabadData();
+        
+        // Load IIT Guwahati data
+        const guwahatiData = loadGuwahatiData();
+        
+        // Load IIT (BHU) Varanasi data
+        const varanasiData = loadVaranasiData();
+        
+        // Load IIT Indore data
+        const indoreData = loadIndoreData();
+        
+        // Load IIT Mandi data
+        const mandiData = loadMandiData();
+        
+        // Load IIT Ropar data
+        const roparData = loadRoparData();
+        
+        // Load IIT Bhubaneswar data
+        const bhubaneswarData = loadBhubaneswarData();
+        
+        // Load IIT Jammu data
+        const jammuData = loadJammuData();
+        
+        // Load IIT Tirupati data
+        const tirupatiData = loadTirupatiData();
+        
+        // Load IIT Palakkad data
+        const palakkadData = loadPalakkadData();
+        
+        // Load IIT Patna data
+        const patnaData = loadPatnaData();
+        
+        // Load IIT Gandhinagar data
+        const gandhinagarData = loadGandhinagarData();
+        
+        // Load IIT Dharwad data
+        const dharwadData = loadDharwadData();
+        
+        // Load IIT Bhilai data
+        const bhilaiData = loadBhilaiData();
+        
+        // Load IIT Goa data
+        const goaData = loadGoaData();
+        
+        // Load IIT (ISM) Dhanbad data
+        const dhanbadData = loadDhanbadData();
+        
         // Merge all datasets
-        masterDataset = [...madrasData, ...delhiData, ...bombayData, ...kanpurData];
+        masterDataset = [...madrasData, ...delhiData, ...bombayData, ...kanpurData, ...kharagpurData, ...roorkeeData, ...hyderabadData, ...guwahatiData, ...varanasiData, ...indoreData, ...mandiData, ...roparData, ...bhubaneswarData, ...jammuData, ...tirupatiData, ...palakkadData, ...patnaData, ...gandhinagarData, ...dharwadData, ...bhilaiData, ...goaData, ...dhanbadData];
         filteredData = [...masterDataset];
         
         // Render IIT sections
@@ -230,13 +284,456 @@ function loadKanpurData() {
     ];
 }
 
+// IIT Kharagpur data
+function loadKharagpurData() {
+    return [
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Amrita Sen", "designation": "Assistant Professor Grade-I", "subjectArea": "Sociology"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Anubhab Pattanayak", "designation": "Assistant Professor Grade-I", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Anuradha Choudry", "designation": "Associate Professor", "subjectArea": "Indian Knowledge Systems"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Anway Mukhopadhyay", "designation": "Assistant Professor Grade-I", "subjectArea": "Indic Studies"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Anwesha Aditya", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Archana Patnaik", "designation": "Associate Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Bhagirath Behera", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Bimal Kishore Sahoo", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Binita Tiwari", "designation": "Assistant Professor Grade-I", "subjectArea": "Psychology"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Bornini Lahiri", "designation": "Assistant Professor Grade-I", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Dripta Piplai (Mondal)", "designation": "Assistant Professor Grade-I", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Dripto Bakshi", "designation": "Assistant Professor Grade-I", "subjectArea": "To be determined"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Gourishankar S Hiremath", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "H S Komalesha", "designation": "Professor", "subjectArea": "English Literature"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Inder Sekhar Yadav", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Jenia Mukherjee", "designation": "Associate Professor", "subjectArea": "Environmental Humanities"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Jitendra Mahakud", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Kailash Bihari Lal Srivastava", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Kishor Goswami", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Krittika Banerjee", "designation": "Assistant Professor Grade-I", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Mahima Raina", "designation": "Assistant Professor Grade-I", "subjectArea": "Psychology"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Mantu Kumar Mahalik", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Mukkamala Kameshwar Rao", "designation": "Professor", "subjectArea": "Management"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Narayan Chandra Nayak", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Prantik Bagchi", "designation": "Assistant Professor Grade-I", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Priyadarshi Patnaik", "designation": "Professor", "subjectArea": "Digital Humanities"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Pulak Mishra", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Rabindra Kumar Pradhan", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Rishabh Rai", "designation": "Assistant Professor Grade-I", "subjectArea": "Psychology"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Saswat Samay Das", "designation": "Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Seema Singh", "designation": "Associate Professor", "subjectArea": "English Literature"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Siddhartha Chattopadhyay", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Sunandan Ghosh", "designation": "Assistant Professor Grade-I", "subjectArea": "Economics"},
+        {"iitName": "IIT Kharagpur", "department": "Department of Humanities and Social Sciences", "facultyName": "Vikas Thakur", "designation": "Associate Professor", "subjectArea": "Management"}
+    ];
+}
+
+// IIT Roorkee data
+function loadRoorkeeData() {
+    return [
+        // Economics
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Rishman Jot Kaur Chahal", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "D. Bharat", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Rachita Gulati", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Pratap Chandra Mohanty", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Diptimayee Nayak", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Falguni Pattanaik", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Shruti Sengupta", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Subir Sen", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Aparajita Singh", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Hari Venkatesh", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Aviral Marwal", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Abhishek Samantray", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Manish Kumar Singh", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Dinesh K Nauriyal", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "S. P. Singh", "designation": "Professor", "subjectArea": "Economics"},
+        // English
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Smita Jha", "designation": "Professor", "subjectArea": "English"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Nagendra Kumar", "designation": "Professor", "subjectArea": "English"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Rashmi Gaur", "designation": "Professor", "subjectArea": "English"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Binod Mishra", "designation": "Professor", "subjectArea": "English"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Sarbani Banerjee", "designation": "Assistant Professor", "subjectArea": "English"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Sanjit Kumar Mishra", "designation": "Professor", "subjectArea": "English"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Sonal Jha", "designation": "Assistant Professor", "subjectArea": "English"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Aruni Mahapatra", "designation": "Assistant Professor", "subjectArea": "English"},
+        // Psychology
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Pooja Garg", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Manish Kumar Asthana", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Ram Manohar Singh", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Tony Thomas", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        // Sociology
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Anindya Jayanta Mishra", "designation": "Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Lalatendu Keshari Das", "designation": "Assistant Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Roluahpuia", "designation": "Associate Professor", "subjectArea": "Sociology"},
+        // Sanskrit
+        {"iitName": "IIT Roorkee", "department": "Department of Humanities and Social Sciences", "facultyName": "Pavankumar Satuluri", "designation": "Assistant Professor", "subjectArea": "Sanskrit"}
+    ];
+}
+
+// IIT Hyderabad data (Department of Liberal Arts)
+function loadHyderabadData() {
+    return [
+        // Regular Faculty
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Aalok Khandekar", "designation": "Associate Professor", "subjectArea": "Anthropology / Sociology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Aardra Surendran", "designation": "Assistant Professor", "subjectArea": "Development Studies"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Amrita Deb", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Amrita Datta", "designation": "Associate Professor", "subjectArea": "Development Studies"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Anandita Pan", "designation": "Assistant Professor", "subjectArea": "Gender Studies"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Anindita Majumdar", "designation": "Associate Professor", "subjectArea": "Anthropology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Badri Narayan Rath", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Chandan Bose", "designation": "Associate Professor", "subjectArea": "Anthropology / Sociology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Dinabandhu Sethi", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Gaurav Dhamija", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Haripriya Narasimhan", "designation": "Associate Professor", "subjectArea": "Anthropology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Indira Jalli", "designation": "Associate Professor", "subjectArea": "Cultural Studies"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "K. P. Prabheesh", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "M. P. Ganesh", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Mahati Chittem", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Neeraj Kumar", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Prakash Mondal", "designation": "Associate Professor", "subjectArea": "Linguistics / Cognitive Science"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Rashmi Singh", "designation": "Assistant Professor", "subjectArea": "Anthropology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Shubha Ranganathan", "designation": "Associate Professor", "subjectArea": "Anthropology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Shuhita Bhattacharjee", "designation": "Associate Professor", "subjectArea": "English Literature"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Srirupa Chatterjee", "designation": "Associate Professor", "subjectArea": "English Literature"},
+        // Distinguished Professors
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Paresh Kumar Narayan", "designation": "Distinguished Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Pramod K Nayar", "designation": "Distinguished Professor", "subjectArea": "English Literature"},
+        // Adjunct Professors
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Irudaya Rajan", "designation": "Adjunct Professor", "subjectArea": "Demography"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Anjal Prakash", "designation": "Adjunct Professor", "subjectArea": "Development Studies"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Mridula Anand", "designation": "Adjunct Professor", "subjectArea": "Cultural Studies"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Nanda Kishore Kannuri", "designation": "Adjunct Professor", "subjectArea": "Anthropology"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Jandhyala Tilak", "designation": "Adjunct Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Timothy Marthand", "designation": "Adjunct Professor", "subjectArea": "Education"},
+        {"iitName": "IIT Hyderabad", "department": "Department of Liberal Arts", "facultyName": "Yuka Kataoka", "designation": "Adjunct Professor", "subjectArea": "Education"}
+    ];
+}
+
+// IIT Guwahati data
+function loadGuwahatiData() {
+    return [
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Abhishek Kashyap", "designation": "Assistant Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Agnirup Sarkar", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Amarjyoti Mahanta", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Anamika Barua", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Arupjyoti Saikia", "designation": "Professor", "subjectArea": "History"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Bhaskar Jyoti Neog", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Bidisha Som", "designation": "Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Bodhisattva Sengupta", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Debapriya Basu", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Debarshi Das", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Dilwar Hussain", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "John Thomas", "designation": "Assistant Professor", "subjectArea": "History"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Kiran Keshavamurthy", "designation": "Assistant Professor", "subjectArea": "English"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Liza Das", "designation": "Professor", "subjectArea": "English"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Mithilesh Kumar Jha", "designation": "Assistant Professor", "subjectArea": "Political Science"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Mrinal Kanti Dutta", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Naveen Kashyap", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Ngamjahao Kipgen", "designation": "Associate Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Pahi Saikia", "designation": "Professor", "subjectArea": "Political Science"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Prabhu Venkataraman", "designation": "Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Priyankoo Sarmah", "designation": "Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Rajshree Bedamatta", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Ranu", "designation": "Assistant Professor", "subjectArea": "History"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Rituparna Patgiri", "designation": "Assistant Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Rohini Mokashi-Punekar", "designation": "Professor", "subjectArea": "English"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Sambit Mallick", "designation": "Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Sawmya Ray", "designation": "Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Shakuntala Mahanta", "designation": "Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Sukanya Sharma", "designation": "Professor", "subjectArea": "Archaeology"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Vasundhara Jairath", "designation": "Assistant Professor", "subjectArea": "Development Studies"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Vipul Dutta", "designation": "Assistant Professor", "subjectArea": "History"},
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Visakh Madhusoodanan Subha", "designation": "Assistant Professor", "subjectArea": "Sociology"},
+        // Visiting Faculty
+        {"iitName": "IIT Guwahati", "department": "Department of Humanities and Social Sciences", "facultyName": "Robin Coningham", "designation": "Visiting Professor", "subjectArea": "Archaeology"}
+    ];
+}
+
+// IIT (BHU) Varanasi data
+function loadVaranasiData() {
+    return [
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Ajit Kumar Mishra", "designation": "Professor", "subjectArea": "Medical & Health Humanities / Film & Cultural Studies"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Amrita Dwivedi", "designation": "Associate Professor", "subjectArea": "Environmental Studies / Geography"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Anil Kumar Thakur", "designation": "Associate Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "K V Cybil", "designation": "Associate Professor", "subjectArea": "Sociology / Anthropology"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Kavya Krishna K. R.", "designation": "Assistant Professor", "subjectArea": "Cultural Studies / Gender Studies"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Manhar Charan", "designation": "Assistant Professor", "subjectArea": "Religious Studies"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Nirmalya Guha", "designation": "Associate Professor", "subjectArea": "Philosophy / Logic"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Prasanta Kumar Panda", "designation": "Professor", "subjectArea": "Literary Theory / Professional Communication"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Sanjukta Ghosh", "designation": "Associate Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Satish Kanaujia", "designation": "Assistant Professor", "subjectArea": "Physical Education / Sports"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Shail Shankar", "designation": "Assistant Professor", "subjectArea": "Humanities"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Sukhada", "designation": "Assistant Professor", "subjectArea": "Indian Knowledge Systems / Linguistics"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Swasti Mishra", "designation": "Assistant Professor", "subjectArea": "Sociolinguistics / Computational Linguistics"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Tara Chand", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Vinita Chandra", "designation": "Professor", "subjectArea": "History"},
+        // Visiting Faculty
+        {"iitName": "IIT (BHU) Varanasi", "department": "Department of Humanistic Studies", "facultyName": "Sanjaya Kumar Lenka", "designation": "Visiting Faculty", "subjectArea": "Linguistics"}
+    ];
+}
+
+// IIT Indore data
+function loadIndoreData() {
+    return [
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Ruchi Sharma", "designation": "Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Nirmala Menon", "designation": "Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Sanjram Premjit Khangamba", "designation": "Professor", "subjectArea": "Psychology / Human Factors"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "C. Upendra", "designation": "Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Ashok Kumar Mocherla", "designation": "Associate Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Akshaya Kumar", "designation": "Associate Professor", "subjectArea": "Media Studies"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Ananya Ghoshal", "designation": "Associate Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Shomik Dasgupta", "designation": "Associate Professor", "subjectArea": "History"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Kalandi Charan Pradhan", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Aratrika Das", "designation": "Associate Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Kedarmal Verma", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Thapasya J.", "designation": "Assistant Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Sansuma Brahma", "designation": "Assistant Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Dishari Chattaraj", "designation": "Assistant Professor", "subjectArea": "Education / Linguistics"},
+        {"iitName": "IIT Indore", "department": "School of Humanities and Social Sciences", "facultyName": "Abhishek Yadav", "designation": "Assistant Professor", "subjectArea": "Philosophy"}
+    ];
+}
+
+// IIT Mandi data
+function loadMandiData() {
+    return [
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Ramna Thakur", "designation": "Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Manu V Devadevan", "designation": "Associate Professor", "subjectArea": "History"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Nilamber Chhetri", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Rajeshwari Dutt", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Shyamasree Dasgupta", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Suman", "designation": "Associate Professor", "subjectArea": "English Literature"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Surya Prakash Upadhyay", "designation": "Associate Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Aruna Bommareddi", "designation": "Assistant Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Devika Sethi", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Karan Rai", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Masudul Hasan Adil", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Neethi Vadakkan Alexander", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Neha Kaushik", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Saumya Malviya", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Thirthankar Chakraborty", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Aparna Malviya", "designation": "Visiting Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Ingrid Shockey", "designation": "Visiting Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Juan Luis Toribio", "designation": "Visiting Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Mandi", "department": "School of Humanities and Social Sciences", "facultyName": "Chieko Hiroe", "designation": "Guest Faculty", "subjectArea": "To be determined"}
+    ];
+}
+
+// IIT Ropar data
+function loadRoparData() {
+    return [
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Amritesh", "designation": "Assistant Professor", "subjectArea": "Management"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Aparna N", "designation": "Assistant Professor", "subjectArea": "English"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Bhavesh Garg", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Dibyakusum Ray", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Kamal Kumar Choudhary", "designation": "Associate Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Parwinder Singh", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Rano Ringo", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Ravi Kumar", "designation": "Assistant Professor", "subjectArea": "Management"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Samaresh Bardhan", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Smruti Ranjan Behera", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Somdev Kar", "designation": "Associate Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Ropar", "department": "Department of Humanities and Social Sciences", "facultyName": "Sreekumar Jayadevan", "designation": "Assistant Professor", "subjectArea": "Philosophy"}
+    ];
+}
+
+// IIT Bhubaneswar data
+function loadBhubaneswarData() {
+    return [
+        // Economics
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Dukhabandhu Sahoo", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Naresh Chandra Sahu", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Madhusmita Dash", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Nihar Ranjan Jena", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Sitakanta Panda", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Avishek Bhandari", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Sayel Basel", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        // English
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Amrita Satapathy", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Punyashree Panda", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Akshaya Kumar Rath", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Rajakumar Guduru", "designation": "Assistant Professor", "subjectArea": "English"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Ashna Jacob", "designation": "Assistant Professor", "subjectArea": "English"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Swathi Krishna S", "designation": "Assistant Professor", "subjectArea": "English"},
+        // Psychology
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Anamitra Basu", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Aparna Pandey", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Prama Bhattacharya", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        // Philosophy
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Sreetama Misra", "designation": "Assistant Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "Richa Shukla", "designation": "Assistant Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Bhubaneswar", "department": "School of Humanities, Social Sciences and Management", "facultyName": "R Venkata Raghavan", "designation": "Assistant Professor", "subjectArea": "Philosophy"}
+    ];
+}
+
+// IIT Jammu data
+function loadJammuData() {
+    return [
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Meenakshi Rajeev", "designation": "Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Amitash Ojha", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Ankit Kathuria", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Garima Singh", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Hardeep Singh", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Joby Varghese", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Malvika Sharma", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Muhammed Haneefa A.P.", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Quleen Kaur Bijral", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Sanchita Srivastava", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Shafkat Shafi Dar", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Sukanya Mondal", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Jammu", "department": "Department of Humanities and Social Sciences", "facultyName": "Bijoy H Boruah", "designation": "Advisor", "subjectArea": "To be determined"}
+    ];
+}
+
+// IIT Tirupati data
+function loadTirupatiData() {
+    return [
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "A Raghuramaraju", "designation": "Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Chandra Sekhar Bahinipati", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Bharath Kumar", "designation": "Associate Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Rahul A. Sirohi", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Vaneet Kashyap", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Arvind Kumar Pandey", "designation": "Assistant Professor", "subjectArea": "Urban Planning"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Bibhuti Mary Kachhap", "designation": "Assistant Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Samyukta Bhupatiraju", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Shailendra Kumar Singh", "designation": "Assistant Professor", "subjectArea": "Literature / Gender Studies"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Varun Varghese", "designation": "Assistant Professor", "subjectArea": "Urban Planning"},
+        {"iitName": "IIT Tirupati", "department": "Department of Humanities and Social Sciences", "facultyName": "Vishnu C. Rajan", "designation": "Assistant Professor", "subjectArea": "Management"}
+    ];
+}
+
+// IIT Palakkad data
+function loadPalakkadData() {
+    return [
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Amrita Roy", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Sujatha G", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Reenu Punnoose", "designation": "Associate Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Anoop George", "designation": "Associate Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Rahul Choragudi", "designation": "Associate Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Sudarshan R Kottai", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Biswajit Sarmah", "designation": "Associate Professor", "subjectArea": "History"},
+        {"iitName": "IIT Palakkad", "department": "Department of Humanities and Social Sciences", "facultyName": "Manav Khaire", "designation": "Associate Professor", "subjectArea": "Political Science"}
+    ];
+}
+
+// IIT Patna data
+function loadPatnaData() {
+    return [
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Nalin Bharti", "designation": "Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Smriti Singh", "designation": "Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Sweta Sinha", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Aditya Raj", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Priyanka Tripathi", "designation": "Associate Professor", "subjectArea": "English"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Richa Chaudhary", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Papia Raj", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Rajendra N. Paramanik", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Patna", "department": "Department of Humanities and Social Sciences", "facultyName": "Meghna Dutta", "designation": "Assistant Professor", "subjectArea": "To be determined"}
+    ];
+}
+
+// IIT Gandhinagar data
+function loadGandhinagarData() {
+    return [
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Alok Kumar Kanungo", "designation": "Associate Research Professor", "subjectArea": "History"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Ambika Aiyadurai", "designation": "Associate Professor", "subjectArea": "Society and Culture"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Arka Chattopadhyay", "designation": "Associate Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Arnapurna Rath", "designation": "Associate Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "C N Pandey", "designation": "Professor of Practice", "subjectArea": "Environmental Studies"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Jaison A. Manjaly", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Madhumita Sengupta", "designation": "Associate Professor", "subjectArea": "History"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Sameer Sahasrabudhe", "designation": "Professor of Practice", "subjectArea": "Design"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Sharada C. V.", "designation": "Associate Professor", "subjectArea": "Archaeological Sciences"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Sharmita Lahiri", "designation": "Associate Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Tanka Bahadur Subba", "designation": "Visiting Professor", "subjectArea": "Anthropology"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "V.N. Prabhakar", "designation": "Professor", "subjectArea": "Archaeological Sciences"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Deepak Singhania", "designation": "Assistant Professor", "subjectArea": "Political Science"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Praharsh M. Patel", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Aditi Kothiyal", "designation": "Assistant Teaching Professor", "subjectArea": "Education"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Jooyoung Kim", "designation": "Assistant Teaching Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Malay Nitinkumar Dhamelia", "designation": "Assistant Professor", "subjectArea": "Design / Game Studies"},
+        {"iitName": "IIT Gandhinagar", "department": "School of Humanities and Social Sciences", "facultyName": "Manasi Kanetkar", "designation": "Associate Teaching Professor", "subjectArea": "Design"}
+    ];
+}
+
+// IIT Dharwad data
+function loadDharwadData() {
+    return [
+        {"iitName": "IIT Dharwad", "department": "Department of Humanities, Economics, Arts and Rural Technologies", "facultyName": "Mohana Rao Balaga", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Dharwad", "department": "Department of Humanities, Economics, Arts and Rural Technologies", "facultyName": "Debalina Chakravarty", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Dharwad", "department": "Department of Humanities, Economics, Arts and Rural Technologies", "facultyName": "Gopal Sharan Parashari", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Dharwad", "department": "Department of Humanities, Economics, Arts and Rural Technologies", "facultyName": "Jolly Thomas", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Dharwad", "department": "Department of Humanities, Economics, Arts and Rural Technologies", "facultyName": "Ridhima Tewari", "designation": "Associate Professor", "subjectArea": "To be determined"}
+    ];
+}
+
+// IIT Bhilai data
+function loadBhilaiData() {
+    return [
+        {"iitName": "IIT Bhilai", "department": "Department of Liberal Arts", "facultyName": "Anubhav Pradhan", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Bhilai", "department": "Department of Liberal Arts", "facultyName": "Anindita Ghosh", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Bhilai", "department": "Department of Liberal Arts", "facultyName": "Sonal Jha", "designation": "Assistant Professor", "subjectArea": "Cultural Studies"},
+        {"iitName": "IIT Bhilai", "department": "Department of Liberal Arts", "facultyName": "Sruthi Vinayan", "designation": "Assistant Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Bhilai", "department": "Department of Liberal Arts", "facultyName": "Rekha Ravindran", "designation": "Assistant Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Bhilai", "department": "Department of Liberal Arts", "facultyName": "Sreelakshmi R.", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT Bhilai", "department": "Department of Liberal Arts", "facultyName": "Ritika Verma", "designation": "Assistant Professor", "subjectArea": "Literature"}
+    ];
+}
+
+// IIT Goa data
+function loadGoaData() {
+    return [
+        {"iitName": "IIT Goa", "department": "School of Humanities and Social Sciences", "facultyName": "Sunil Paul", "designation": "Associate Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Goa", "department": "School of Humanities and Social Sciences", "facultyName": "Anandarao Suvvari", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Goa", "department": "School of Humanities and Social Sciences", "facultyName": "Sabiha Hashami", "designation": "Assistant Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Goa", "department": "School of Humanities and Social Sciences", "facultyName": "Vijay Victor", "designation": "Assistant Professor", "subjectArea": "Economics"},
+        {"iitName": "IIT Goa", "department": "School of Humanities and Social Sciences", "facultyName": "Sundeep Kumar Nayak", "designation": "Professor of Practice", "subjectArea": "Public Policy"}
+    ];
+}
+
+// IIT (ISM) Dhanbad data
+function loadDhanbadData() {
+    return [
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Ajit Kumar Behura", "designation": "Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Rajni Singh", "designation": "Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Gyan Prakash", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Md Mojibur Rahman", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Nirban Manna", "designation": "Associate Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Ahmed Sameer", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Debashrita Dey", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Deepika Sharma", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Dipannita Chand", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Indumathy J", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Rahul D R", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Sanatan Mandal", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Sangay Tamang", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Sathya Narayana Sharma", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Shanmugapriya T", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Shonkholen Mate", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Sruti Kanungo", "designation": "Assistant Professor", "subjectArea": "To be determined"},
+        {"iitName": "IIT (ISM) Dhanbad", "department": "Department of Humanities and Social Sciences", "facultyName": "Sucharita Maji", "designation": "Assistant Professor", "subjectArea": "To be determined"}
+    ];
+}
+
 // Get full IIT name
 function getFullIITName(shortName) {
     const map = {
         'IIT Madras': 'INDIAN INSTITUTE OF TECHNOLOGY MADRAS',
         'IIT Delhi': 'INDIAN INSTITUTE OF TECHNOLOGY DELHI',
         'IIT Bombay': 'INDIAN INSTITUTE OF TECHNOLOGY BOMBAY',
-        'IIT Kanpur': 'INDIAN INSTITUTE OF TECHNOLOGY KANPUR'
+        'IIT Kanpur': 'INDIAN INSTITUTE OF TECHNOLOGY KANPUR',
+        'IIT Kharagpur': 'INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR',
+        'IIT Roorkee': 'INDIAN INSTITUTE OF TECHNOLOGY ROORKEE',
+        'IIT Hyderabad': 'INDIAN INSTITUTE OF TECHNOLOGY HYDERABAD',
+        'IIT Guwahati': 'INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI',
+        'IIT (BHU) Varanasi': 'INDIAN INSTITUTE OF TECHNOLOGY (BHU) VARANASI',
+        'IIT Indore': 'INDIAN INSTITUTE OF TECHNOLOGY INDORE',
+        'IIT Mandi': 'INDIAN INSTITUTE OF TECHNOLOGY MANDI',
+        'IIT Ropar': 'INDIAN INSTITUTE OF TECHNOLOGY ROPAR',
+        'IIT Bhubaneswar': 'INDIAN INSTITUTE OF TECHNOLOGY BHUBANESWAR',
+        'IIT Jammu': 'INDIAN INSTITUTE OF TECHNOLOGY JAMMU',
+        'IIT Tirupati': 'INDIAN INSTITUTE OF TECHNOLOGY TIRUPATI',
+        'IIT Palakkad': 'INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD',
+        'IIT Patna': 'INDIAN INSTITUTE OF TECHNOLOGY PATNA',
+        'IIT Gandhinagar': 'INDIAN INSTITUTE OF TECHNOLOGY GANDHINAGAR',
+        'IIT Dharwad': 'INDIAN INSTITUTE OF TECHNOLOGY DHARWAD',
+        'IIT Bhilai': 'INDIAN INSTITUTE OF TECHNOLOGY BHILAI',
+        'IIT Goa': 'INDIAN INSTITUTE OF TECHNOLOGY GOA',
+        'IIT (ISM) Dhanbad': 'INDIAN INSTITUTE OF TECHNOLOGY (ISM) DHANBAD'
     };
     return map[shortName] || shortName.toUpperCase();
 }
