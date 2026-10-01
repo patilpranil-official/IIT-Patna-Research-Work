@@ -1,0 +1,21 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary Files
+*.tmp
+*.bak
+~*
+
+# Export Files (if you want to exclude generated exports)
+# tasks/*/exports/
+
+# Node modules (if you add build tools later)
+node_modules/
+package-lock.json
