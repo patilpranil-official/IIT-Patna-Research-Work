@@ -57,7 +57,7 @@ Compilation of IIT-wise Humanities and Social Sciences faculty information with 
 3. Select main branch as source
 4. Save and wait for deployment
 
-Your site will be available at: `https://[username].github.io/IIT-Patna-Academic-Research-Work/`
+Your site will be available at: `https://patilpranil-official.github.io/IIT-Patna-Academic-Research-Work/`
 
 ### Local Development
 
