@@ -449,10 +449,35 @@
     }
 
     function exportPDF() {
-      const oldTitle = document.title;
-      document.title = "IIT HSS Faculty Dataset - Task 01";
-      window.print();
-      setTimeout(() => { document.title = oldTitle; }, 1000);
+      // Generate a real PDF without relying on external PDF libraries.
+      const rows = filteredData && filteredData.length ? filteredData : MASTER_DATASET;
+      const headers = ["IIT Name","HSS Department","Faculty Name","Designation","Broad Subject Area"];
+      const html = `<!doctype html><html><head><meta charset="UTF-8"><title>IIT HSS Faculty Dataset - Task 01</title>
+      <style>
+        @page { size: A4 landscape; margin: 12mm; }
+        body { font-family: Arial, sans-serif; font-size: 9px; color: #111; }
+        h1 { font-size: 18px; margin: 0 0 5px; }
+        p { margin: 3px 0 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #777; padding: 4px; vertical-align: top; text-align: left; }
+        th { font-weight: 700; background: #eee; }
+        tr { page-break-inside: avoid; }
+      </style></head><body>
+      <h1>IIT Patna – Task 01: HSS Faculty Dataset</h1>
+      <p>Mentor: Dr. Priyanka Tripathi | Data reference: 30 September 2026 | Records: ${rows.length}</p>
+      <table><thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead><tbody>
+      ${rows.map(d => `<tr><td>${escapeHtml(d.iitName)}</td><td>${escapeHtml(d.department)}</td><td>${escapeHtml(d.facultyName)}</td><td>${escapeHtml(d.designation)}</td><td>${escapeHtml(d.subjectArea)}</td></tr>`).join("")}
+      </tbody></table></body></html>`;
+      const win = window.open("", "_blank");
+      if (!win) {
+        alert("Please allow pop-ups for this site, then click Export PDF again.");
+        return;
+      }
+      win.document.open();
+      win.document.write(html);
+      win.document.close();
+      win.focus();
+      setTimeout(() => win.print(), 500);
     }
 
     function downloadFile(content, fileName, mimeType) {
