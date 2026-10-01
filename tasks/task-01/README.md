@@ -13,8 +13,8 @@ Comprehensive compilation of Humanities and Social Sciences faculty information 
 
 ## Dataset Overview
 
-**Total Faculty Records:** 479  
-**IITs Completed:** 22
+**Total Faculty Records:** 502  
+**IITs Completed:** 23
 
 ### IITs Included:
 1. **IIT Madras** - 18 faculty members
@@ -39,6 +39,7 @@ Comprehensive compilation of Humanities and Social Sciences faculty information 
 20. **IIT Bhilai** - 7 faculty members
 21. **IIT Goa** - 5 faculty members (including 1 Professor of Practice)
 22. **IIT (ISM) Dhanbad** - 18 faculty members
+23. **IIT Jodhpur** - 23 faculty members (including 1 Professor of Practice)
 
 ## Required Dataset Fields
 
@@ -257,4 +258,4 @@ To add new IIT data:
 
 *Task created: 30 September 2026*  
 *Last updated: 01 October 2026*  
-*Status: In Progress - 22 IITs completed*
+*Status: In Progress - 23 IITs completed*

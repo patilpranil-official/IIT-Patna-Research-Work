@@ -3,230 +3,763 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 01 – HSS Faculty Mapping Across IITs | IIT Patna Research</title>
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="../../assets/css/task.css">
+    <title>IIT Patna My Update Portal | Task 01</title>
+    <link rel="stylesheet" href="../../tasks/assets/css/main.css">
+    <link rel="stylesheet" href="../../tasks/assets/css/task.css">
     <style>
-        .iit-section {
-            margin: 64px 0;
-            padding: 48px;
-            background: var(--bg);
-            border: 2px solid var(--border);
-            border-radius: 12px;
-        }
-        
-        .iit-section:not(:last-child) {
-            margin-bottom: 80px;
-        }
-        
-        .iit-header {
+        /* ============================================================
+           PORTAL-SPECIFIC STYLES — Task 01
+        ============================================================ */
+
+        /* --- Header Hero --- */
+        .portal-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 48px 0 40px;
             text-align: center;
-            margin-bottom: 48px;
-            padding-bottom: 24px;
-            border-bottom: 3px solid var(--highlight);
         }
-        
-        .iit-full-name {
-            font-size: 14px;
-            text-transform: uppercase;
+        .portal-tag {
+            display: inline-block;
+            padding: 5px 14px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
             letter-spacing: 2px;
-            color: var(--text-light);
-            margin-bottom: 8px;
-            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 12px;
         }
-        
-        .iit-short-name {
+        .portal-main-title {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            line-height: 1.2;
+        }
+        .portal-subtitle {
+            font-size: 18px;
+            opacity: 0.85;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .status-badge-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #d4edda;
+            color: #155724;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        .status-badge-hero .check {
+            font-size: 16px;
+        }
+        .portal-ref-date {
+            font-size: 13px;
+            opacity: 0.75;
+            margin-top: 8px;
+        }
+
+        /* --- Mentor Section --- */
+        .mentor-section {
+            background: #f8f9fa;
+            border-bottom: 1px solid #e1e8ed;
+            padding: 32px 0;
+        }
+        .mentor-card {
+            background: white;
+            border: 1px solid #e1e8ed;
+            border-left: 4px solid #533483;
+            border-radius: 8px;
+            padding: 28px 32px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .mentor-section-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #533483;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+        .mentor-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+        .mentor-designation {
+            font-size: 15px;
+            color: #2d3436;
+            margin-bottom: 2px;
+        }
+        .mentor-dept {
+            font-size: 14px;
+            color: #636e72;
+            margin-bottom: 2px;
+        }
+        .mentor-inst {
+            font-size: 14px;
+            color: #636e72;
+        }
+
+        /* --- Statistics Cards --- */
+        .stats-section {
+            padding: 36px 0;
+            background: white;
+            border-bottom: 1px solid #e1e8ed;
+        }
+        .stats-section .section-label {
+            text-align: center;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #636e72;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .stat-card {
+            background: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .stat-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .stat-value {
             font-size: 36px;
             font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 8px;
-        }
-        
-        .iit-dept-name {
-            font-size: 16px;
-            color: var(--text);
-            font-weight: 500;
-        }
-        
-        .iit-stats {
+            color: #533483;
+            margin-bottom: 6px;
+            min-height: 44px;
             display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 32px;
-            margin-top: 24px;
-            font-size: 14px;
-            color: var(--text-light);
         }
-        
-        .iit-stats span {
+        .stat-value.completed-value {
+            font-size: 18px;
+            color: #155724;
+            background: #d4edda;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #636e72;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             font-weight: 600;
-            color: var(--highlight);
         }
-        
+
+        /* --- Filter Section --- */
         .filter-section {
-            background: var(--bg-light);
-            padding: 24px;
+            background: #f8f9fa;
+            border: 1px solid #e1e8ed;
             border-radius: 8px;
-            margin-bottom: 32px;
+            padding: 24px;
+            margin-bottom: 28px;
         }
-        
+        .filter-section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
         .filter-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 16px;
-            margin-top: 16px;
+            align-items: end;
         }
-        
         .filter-group label {
             display: block;
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 11px;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            color: var(--text);
+            color: #636e72;
+            margin-bottom: 6px;
+        }
+        .filter-group select,
+        .filter-group input[type="text"] {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #e1e8ed;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+            color: #2d3436;
+            transition: border-color 0.2s;
+        }
+        .filter-group select:focus,
+        .filter-group input[type="text"]:focus {
+            outline: none;
+            border-color: #533483;
+        }
+        .filter-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* --- Dataset Header / Actions --- */
+        .dataset-outer {
+            padding: 48px 0;
+        }
+        .dataset-title-row {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .dataset-main-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1a1a2e;
             margin-bottom: 8px;
         }
-        
-        .filter-group select {
+        .dataset-desc {
+            font-size: 15px;
+            color: #636e72;
+        }
+        .export-section {
+            margin-bottom: 24px;
+        }
+        .export-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #636e72;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .export-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-excel {
+            background: #1d6f42;
+            color: white;
+        }
+        .btn-excel:hover { background: #155235; transform: translateY(-1px); }
+        .btn-csv {
+            background: #0984e3;
+            color: white;
+        }
+        .btn-csv:hover { background: #0773c5; transform: translateY(-1px); }
+        .btn-pdf {
+            background: #e17055;
+            color: white;
+        }
+        .btn-pdf:hover { background: #c0604a; transform: translateY(-1px); }
+        .btn-print {
+            background: white;
+            color: #2d3436;
+            border: 1px solid #e1e8ed;
+        }
+        .btn-print:hover { background: #f8f9fa; transform: translateY(-1px); }
+        .btn-filtered {
+            background: white;
+            color: #533483;
+            border: 1px solid #533483;
+        }
+        .btn-filtered:hover { background: #f3f0ff; transform: translateY(-1px); }
+        .btn-reset {
+            background: white;
+            color: #636e72;
+            border: 1px solid #e1e8ed;
+            font-size: 12px;
+            padding: 8px 14px;
+        }
+        .btn-reset:hover { background: #f8f9fa; }
+
+        /* --- Result count --- */
+        .result-count {
+            font-size: 13px;
+            color: #636e72;
+            margin-bottom: 12px;
+        }
+
+        /* --- IIT Section --- */
+        .iit-section {
+            margin: 0 0 40px;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .iit-header {
+            background: #f8f9fa;
+            padding: 20px 24px;
+            border-bottom: 2px solid #533483;
+        }
+        .iit-seq-name {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #533483;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .iit-short-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+        .iit-dept-name {
+            font-size: 13px;
+            color: #636e72;
+        }
+        .iit-stats-row {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: #636e72;
+        }
+        .iit-stats-row span {
+            font-weight: 700;
+            color: #533483;
+        }
+
+        /* --- Table --- */
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        .data-table {
             width: 100%;
-            padding: 10px;
-            border: 1px solid var(--border);
-            border-radius: 4px;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+        .data-table thead {
+            background: #f8f9fa;
+            position: sticky;
+            top: 0;
+        }
+        .data-table th {
+            padding: 14px 16px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #636e72;
+            border-bottom: 2px solid #e1e8ed;
+            white-space: nowrap;
+        }
+        .data-table td {
+            padding: 13px 16px;
             font-size: 14px;
+            color: #2d3436;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .data-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+        .data-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* --- Empty State --- */
+        .empty-state {
+            text-align: center;
+            padding: 60px 24px;
+            color: #636e72;
+        }
+        .empty-state-icon {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+        .empty-state p {
+            font-size: 15px;
+        }
+
+        /* --- Loading State --- */
+        .loading-state {
+            text-align: center;
+            padding: 60px 24px;
+            color: #636e72;
+        }
+
+        /* --- Error State --- */
+        .error-state {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            color: #856404;
+        }
+
+        /* --- Footer --- */
+        .portal-footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 40px 0 24px;
+            margin-top: 0;
+        }
+        .footer-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 28px;
+        }
+        .footer-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: white;
+        }
+        .footer-subtitle {
+            font-size: 13px;
+            opacity: 0.75;
+            margin-bottom: 16px;
+        }
+        .footer-mentor-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.6;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .footer-mentor-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 2px;
+        }
+        .footer-mentor-detail {
+            font-size: 13px;
+            opacity: 0.75;
+            margin-bottom: 1px;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .footer-copy {
+            font-size: 13px;
+            opacity: 0.75;
+        }
+        .footer-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .footer-notice {
+            font-size: 12px;
+            opacity: 0.55;
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+
+        /* --- Nav brand update --- */
+        .nav-logo { font-size: 18px; }
+        .nav-title { font-size: 13px; }
+
+        /* --- Print --- */
+        @media print {
+            .navbar, .breadcrumb, .filter-section, .export-section,
+            .filter-actions, .btn, .portal-footer, .result-count { display: none !important; }
+            .portal-hero { background: white !important; color: black !important; }
+            .portal-main-title { color: black !important; }
+            .portal-subtitle { color: #333 !important; }
+            .status-badge-hero { border: 1px solid #155724; }
+            .iit-header { background: white !important; }
+            .data-table th { background: #f0f0f0 !important; }
+            body { font-size: 12px; }
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .portal-main-title { font-size: 26px; }
+            .filter-grid { grid-template-columns: 1fr; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+            .footer-bottom { flex-direction: column; align-items: flex-start; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .portal-main-title { font-size: 22px; }
+            .export-buttons { flex-direction: column; }
+            .stats-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-brand">
                 <span class="nav-logo">IIT Patna</span>
-                <span class="nav-title">Research Portal</span>
+                <span class="nav-title">My Update Portal</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../../index.html#tasks">Research Tasks</a></li>
-                <li><a href="https://github.com" target="_blank">Repository</a></li>
+                <li><a href="./terms.html">Terms &amp; Conditions</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- ===== BREADCRUMB ===== -->
     <div class="breadcrumb">
         <div class="container">
             <a href="../../index.html">← Back to Research Tasks</a>
         </div>
     </div>
 
-    <section class="task-header-section">
+    <!-- ===== PORTAL HERO ===== -->
+    <header class="portal-hero">
         <div class="container">
-            <div class="task-header-content">
-                <span class="task-badge">TASK 01</span>
-                <h1 class="task-main-title">HSS Faculty Mapping Across IITs</h1>
-                
-                <div class="task-info-grid">
-                    <div class="task-info-item">
-                        <span class="info-label">Task Status</span>
-                        <span class="info-value"><span class="task-status status-in-progress">In Progress</span></span>
+            <div class="portal-tag">Task 01</div>
+            <h1 class="portal-main-title">IIT Patna My Update Portal</h1>
+            <p class="portal-subtitle">HSS Faculty Mapping Across IITs</p>
+            <div class="status-badge-hero" role="status" aria-label="Task status: Completed">
+                <span class="check">✓</span>
+                <span>Task 01 — COMPLETED</span>
+            </div>
+            <p class="portal-ref-date">Reference Date: 30 September 2026</p>
+        </div>
+    </header>
+
+    <!-- ===== FACULTY MENTOR SECTION ===== -->
+    <section class="mentor-section" aria-labelledby="mentor-heading">
+        <div class="container">
+            <div class="mentor-card">
+                <p class="mentor-section-label" id="mentor-heading">Faculty Mentor / Academic Association</p>
+                <p class="mentor-name">Dr. Priyanka Tripathi</p>
+                <p class="mentor-designation">Associate Professor of English</p>
+                <p class="mentor-dept">Department of Humanities and Social Sciences</p>
+                <p class="mentor-inst">Indian Institute of Technology Patna</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DATASET STATISTICS ===== -->
+    <section class="stats-section" aria-label="Dataset statistics">
+        <div class="container">
+            <p class="section-label">Dataset Overview</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="statIITsCovered">—</div>
+                    <div class="stat-label">IITs Covered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statTotalFaculty">—</div>
+                    <div class="stat-label">Total Faculty Records</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">
+                        <span class="completed-value">✓ COMPLETED</span>
                     </div>
-                    <div class="task-info-item">
-                        <span class="info-label">Reference Date</span>
-                        <span class="info-value">30 September 2026</span>
-                    </div>
-                    <div class="task-info-item">
-                        <span class="info-label">IITs Completed</span>
-                        <span class="info-value" id="iitsCompleted">8 / Ongoing</span>
-                    </div>
-                    <div class="task-info-item">
-                        <span class="info-label">Total Faculty Records</span>
-                        <span class="info-value" id="totalRecords">265</span>
-                    </div>
+                    <div class="stat-label">Task Status</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="dataset-section">
+    <!-- ===== DATASET SECTION ===== -->
+    <section class="dataset-outer" aria-labelledby="dataset-heading">
         <div class="container">
-            <div class="dataset-header">
-                <h2 class="dataset-title">Comprehensive IIT HSS Faculty Database</h2>
-                <p class="dataset-description">
-                    Complete compilation of Humanities and Social Sciences faculty across multiple IITs with designations and subject areas.
-                </p>
+            <div class="dataset-title-row">
+                <h2 class="dataset-main-title" id="dataset-heading">IIT HSS Faculty Dataset</h2>
+                <p class="dataset-desc">Complete compilation of Humanities and Social Sciences faculty across Indian Institutes of Technology.</p>
             </div>
 
-            <!-- Filters -->
-            <div class="filter-section">
-                <h3 style="margin-bottom: 16px; font-size: 18px;">Filter Dataset</h3>
+            <!-- FILTERS -->
+            <div class="filter-section" role="search" aria-label="Filter dataset">
+                <div class="filter-section-title">
+                    <span>🔍</span> Filter Dataset
+                </div>
                 <div class="filter-grid">
                     <div class="filter-group">
                         <label for="filterIIT">Filter by IIT</label>
-                        <select id="filterIIT" onchange="applyFilters()">
+                        <select id="filterIIT" onchange="applyFilters()" aria-label="Select IIT">
                             <option value="">All IITs</option>
-                            <option value="IIT Madras">IIT Madras</option>
-                            <option value="IIT Delhi">IIT Delhi</option>
-                            <option value="IIT Bombay">IIT Bombay</option>
-                            <option value="IIT Kanpur">IIT Kanpur</option>
-                            <option value="IIT Kharagpur">IIT Kharagpur</option>
-                            <option value="IIT Roorkee">IIT Roorkee</option>
-                            <option value="IIT Hyderabad">IIT Hyderabad</option>
-                            <option value="IIT Guwahati">IIT Guwahati</option>
+                            <option value="IIT Madras">01 — IIT Madras</option>
+                            <option value="IIT Delhi">02 — IIT Delhi</option>
+                            <option value="IIT Bombay">03 — IIT Bombay</option>
+                            <option value="IIT Kanpur">04 — IIT Kanpur</option>
+                            <option value="IIT Kharagpur">05 — IIT Kharagpur</option>
+                            <option value="IIT Roorkee">06 — IIT Roorkee</option>
+                            <option value="IIT Hyderabad">07 — IIT Hyderabad</option>
+                            <option value="IIT Guwahati">08 — IIT Guwahati</option>
+                            <option value="IIT (BHU) Varanasi">09 — IIT (BHU) Varanasi</option>
+                            <option value="IIT Indore">10 — IIT Indore</option>
+                            <option value="IIT Mandi">11 — IIT Mandi</option>
+                            <option value="IIT Jodhpur">12 — IIT Jodhpur</option>
+                            <option value="IIT Ropar">13 — IIT Ropar</option>
+                            <option value="IIT Bhubaneswar">14 — IIT Bhubaneswar</option>
+                            <option value="IIT Jammu">15 — IIT Jammu</option>
+                            <option value="IIT Tirupati">16 — IIT Tirupati</option>
+                            <option value="IIT Palakkad">17 — IIT Palakkad</option>
+                            <option value="IIT Patna">18 — IIT Patna</option>
+                            <option value="IIT Gandhinagar">19 — IIT Gandhinagar</option>
+                            <option value="IIT Dharwad">20 — IIT Dharwad</option>
+                            <option value="IIT Bhilai">21 — IIT Bhilai</option>
+                            <option value="IIT Goa">22 — IIT Goa</option>
+                            <option value="IIT (ISM) Dhanbad">23 — IIT (ISM) Dhanbad</option>
                         </select>
                     </div>
                     <div class="filter-group">
                         <label for="filterDesignation">Filter by Designation</label>
-                        <select id="filterDesignation" onchange="applyFilters()">
+                        <select id="filterDesignation" onchange="applyFilters()" aria-label="Select designation">
                             <option value="">All Designations</option>
-                            <option value="Professor">Professor</option>
-                            <option value="Associate Professor">Associate Professor</option>
-                            <option value="Assistant Professor">Assistant Professor</option>
                         </select>
                     </div>
                     <div class="filter-group">
                         <label for="filterSubject">Filter by Subject Area</label>
-                        <select id="filterSubject" onchange="applyFilters()">
+                        <select id="filterSubject" onchange="applyFilters()" aria-label="Select subject area">
                             <option value="">All Subject Areas</option>
-                            <option value="Economics">Economics</option>
-                            <option value="Literature">Literature</option>
-                            <option value="Philosophy">Philosophy</option>
-                            <option value="Psychology">Psychology</option>
-                            <option value="Sociology">Sociology</option>
-                            <option value="Linguistics">Linguistics</option>
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label for="searchFaculty">Search Faculty Name</label>
-                        <input type="text" id="searchFaculty" placeholder="Type name..." class="search-input" oninput="applyFilters()">
+                        <label for="searchFaculty">Search</label>
+                        <input type="text" id="searchFaculty"
+                               placeholder="Name, IIT, department, designation…"
+                               aria-label="Search faculty records"
+                               oninput="applyFilters()">
                     </div>
                 </div>
-            </div>
-
-            <!-- Actions -->
-            <div class="dataset-actions">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search all fields..." class="search-input">
-                </div>
-                <div class="action-buttons">
-                    <button onclick="exportExcel()" class="btn btn-primary">Download Excel</button>
-                    <button onclick="exportCSV()" class="btn btn-primary">Download CSV</button>
-                    <button onclick="exportPDF()" class="btn btn-primary">Export PDF</button>
-                    <button onclick="printDataset()" class="btn btn-secondary">Print</button>
+                <div class="filter-actions">
+                    <button class="btn btn-reset" onclick="resetFilters()" title="Reset all filters">↺ Reset Filters</button>
                 </div>
             </div>
 
-            <!-- IIT Sections will be dynamically generated -->
-            <div id="iitSectionsContainer"></div>
+            <!-- EXPORT BUTTONS -->
+            <div class="export-section">
+                <p class="export-label">Download / Export</p>
+                <div class="export-buttons">
+                    <button class="btn btn-excel" onclick="exportExcel()"
+                            title="Download complete dataset as Excel (.xlsx)">
+                        📊 Download Excel
+                    </button>
+                    <button class="btn btn-csv" onclick="exportCSV()"
+                            title="Download complete dataset as CSV">
+                        📄 Download CSV
+                    </button>
+                    <button class="btn btn-pdf" onclick="exportPDF()"
+                            title="Export complete dataset as PDF">
+                        📕 Export PDF
+                    </button>
+                    <button class="btn btn-print" onclick="printDataset()"
+                            title="Print complete dataset">
+                        🖨 Print
+                    </button>
+                    <button class="btn btn-filtered" onclick="exportFilteredCSV()"
+                            title="Export currently filtered rows as CSV">
+                        ⬇ Export Filtered Data
+                    </button>
+                </div>
+            </div>
+
+            <!-- RESULT COUNT -->
+            <p class="result-count" id="resultCount" aria-live="polite"></p>
+
+            <!-- IIT SECTIONS (dynamically generated) -->
+            <div id="iitSectionsContainer" aria-label="Faculty data tables">
+                <div class="loading-state">
+                    <p>Loading faculty data…</p>
+                </div>
+            </div>
 
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- ===== FOOTER ===== -->
+    <footer class="portal-footer" role="contentinfo">
         <div class="container">
-            <p>&copy; 2026 Indian Institute of Technology Patna. Academic Research Documentation.</p>
+            <div class="footer-inner">
+                <div>
+                    <p class="footer-title">IIT Patna My Update Portal</p>
+                    <p class="footer-subtitle">Task 01 — HSS Faculty Mapping Across IITs</p>
+                    <p style="font-size:12px; opacity:0.6; line-height:1.6;">
+                        Personal academic research and documentation portal.<br>
+                        Reference Date: 30 September 2026
+                    </p>
+                </div>
+                <div>
+                    <p class="footer-mentor-label">Academic Association</p>
+                    <p class="footer-mentor-name">Dr. Priyanka Tripathi</p>
+                    <p class="footer-mentor-detail">Associate Professor of English</p>
+                    <p class="footer-mentor-detail">Department of Humanities and Social Sciences</p>
+                    <p class="footer-mentor-detail">Indian Institute of Technology Patna</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p class="footer-copy">© 2026 Pranil Patil. All rights reserved.</p>
+                    <p class="footer-notice">
+                        This is a personal academic research and documentation portal. It is not affiliated with or an official website of any IIT or the Ministry of Education.
+                        The compilation, structure, and presentation of this portal are the intellectual work of Pranil Patil.
+                        Underlying institutional information remains the property of the respective institutions.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="./terms.html">Terms &amp; Conditions / Data Usage</a>
+                    <a href="../../index.html">Home</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- ===== SCRIPTS ===== -->
+    <!-- SheetJS for Excel export -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- jsPDF for PDF export -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+    <!-- Task master dataset -->
     <script src="../../assets/js/task-master.js"></script>
+    <!-- Portal logic -->
+    <script src="./portal.js"></script>
 </body>
 </html>

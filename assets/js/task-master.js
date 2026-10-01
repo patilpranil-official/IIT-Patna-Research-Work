@@ -72,8 +72,11 @@ async function loadMasterDataset() {
         // Load IIT (ISM) Dhanbad data
         const dhanbadData = loadDhanbadData();
         
+        // Load IIT Jodhpur data
+        const jodhpurData = loadJodhpurData();
+        
         // Merge all datasets
-        masterDataset = [...madrasData, ...delhiData, ...bombayData, ...kanpurData, ...kharagpurData, ...roorkeeData, ...hyderabadData, ...guwahatiData, ...varanasiData, ...indoreData, ...mandiData, ...roparData, ...bhubaneswarData, ...jammuData, ...tirupatiData, ...palakkadData, ...patnaData, ...gandhinagarData, ...dharwadData, ...bhilaiData, ...goaData, ...dhanbadData];
+        masterDataset = [...madrasData, ...delhiData, ...bombayData, ...kanpurData, ...kharagpurData, ...roorkeeData, ...hyderabadData, ...guwahatiData, ...varanasiData, ...indoreData, ...mandiData, ...roparData, ...bhubaneswarData, ...jammuData, ...tirupatiData, ...palakkadData, ...patnaData, ...gandhinagarData, ...dharwadData, ...bhilaiData, ...goaData, ...dhanbadData, ...jodhpurData];
         filteredData = [...masterDataset];
         
         // Render IIT sections
@@ -709,6 +712,35 @@ function loadDhanbadData() {
     ];
 }
 
+// IIT Jodhpur data
+function loadJodhpurData() {
+    return [
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Ankita Sharma", "designation": "Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "V Hari Narayanan", "designation": "Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Alok Ranjan", "designation": "Associate Professor", "subjectArea": "Public Health"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Anupama Mohan", "designation": "Associate Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Farhat Naz", "designation": "Associate Professor", "subjectArea": "Environmental Studies"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "K J George", "designation": "Associate Professor", "subjectArea": "Philosophy"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Suman Dhaka", "designation": "Associate Professor", "subjectArea": "Psychology"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Vidya Sarveswaran", "designation": "Associate Professor", "subjectArea": "Environmental Humanities"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Bhaskar Kumar Kakati", "designation": "Assistant Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Dinesh Mohan Joshi", "designation": "Assistant Professor", "subjectArea": "Indian Mathematics / Astronomy"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Gurujegan Murugesan", "designation": "Assistant Professor", "subjectArea": "Linguistics"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Kanak Yadav", "designation": "Assistant Professor", "subjectArea": "Literature"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Natasa Thoudam", "designation": "Assistant Professor", "subjectArea": "Literary Studies / Gender Studies"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Parichay Patra", "designation": "Assistant Professor", "subjectArea": "Film Studies"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Prasenjeet A Tribhuvan", "designation": "Assistant Professor", "subjectArea": "Anthropology / Sociology"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Rachel Philip", "designation": "Assistant Professor", "subjectArea": "Sociology"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Sherin Sabu", "designation": "Assistant Professor", "subjectArea": "Anthropology"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Sheriya Sareen", "designation": "Assistant Professor", "subjectArea": "Education"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Soni", "designation": "Assistant Professor", "subjectArea": "History"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Sreedevi D", "designation": "Assistant Professor", "subjectArea": "Sensory Studies / Literature"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Sunil Kumar Lohar", "designation": "Assistant Professor", "subjectArea": "Visual Arts"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Tonisha Guin", "designation": "Assistant Professor", "subjectArea": "Knowledge Systems / Media Studies"},
+        {"iitName": "IIT Jodhpur", "department": "School of Liberal Arts", "facultyName": "Bhaswati Sarma", "designation": "Professor of Practice", "subjectArea": "Performing Arts / Music"}
+    ];
+}
+
 // Get full IIT name
 function getFullIITName(shortName) {
     const map = {
@@ -733,7 +765,8 @@ function getFullIITName(shortName) {
         'IIT Dharwad': 'INDIAN INSTITUTE OF TECHNOLOGY DHARWAD',
         'IIT Bhilai': 'INDIAN INSTITUTE OF TECHNOLOGY BHILAI',
         'IIT Goa': 'INDIAN INSTITUTE OF TECHNOLOGY GOA',
-        'IIT (ISM) Dhanbad': 'INDIAN INSTITUTE OF TECHNOLOGY (ISM) DHANBAD'
+        'IIT (ISM) Dhanbad': 'INDIAN INSTITUTE OF TECHNOLOGY (ISM) DHANBAD',
+        'IIT Jodhpur': 'INDIAN INSTITUTE OF TECHNOLOGY JODHPUR'
     };
     return map[shortName] || shortName.toUpperCase();
 }
