@@ -12,10 +12,12 @@
     "institution": "Indian Institute of Technology Patna"
   },
   "statistics": {
-    "totalTasks": 2,
+    "totalTasks": 1,
     "completedTasks": 0,
     "inProgressTasks": 1,
-    "notStartedTasks": 1
+    "notStartedTasks": 0,
+    "iitsCompleted": 4,
+    "totalFacultyRecords": 137
   },
   "tasks": [
     {
@@ -24,9 +26,10 @@
       "status": "In Progress",
       "referenceDate": "2026-09-30",
       "assignedBy": "Dr. Priyanka Tripathi",
-      "description": "Compilation of IIT-wise Humanities and Social Sciences faculty information with their designations and broad subject areas.",
+      "description": "Compilation of IIT-wise Humanities and Social Sciences faculty information with their designations and broad subject areas across all IITs.",
       "path": "tasks/task-01",
-      "datasetType": "Faculty Information Database"
+      "datasetType": "Faculty Information Database",
+      "iitsIncluded": ["IIT Madras", "IIT Delhi", "IIT Bombay", "IIT Kanpur"]
     }
   ]
 }
