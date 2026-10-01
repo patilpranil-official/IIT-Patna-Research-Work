@@ -1,9 +1,37 @@
 [
   {
-    "iitName": "Example IIT",
-    "department": "Example Department",
-    "facultyName": "Placeholder Entry",
-    "designation": "Example Designation",
-    "subjectArea": "Example Subject Area"
+    "iitName": "IIT Madras",
+    "department": "Department of Humanities and Social Sciences",
+    "facultyName": "Rajesh Kumar",
+    "designation": "Professor",
+    "subjectArea": "Linguistics"
+  },
+  {
+    "iitName": "IIT Madras",
+    "department": "Department of Humanities and Social Sciences",
+    "facultyName": "Avishek Parui",
+    "designation": "Associate Professor",
+    "subjectArea": "English / Literature"
+  },
+  {
+    "iitName": "IIT Madras",
+    "department": "Department of Humanities and Social Sciences",
+    "facultyName": "Aysha Viswamohan",
+    "designation": "Professor",
+    "subjectArea": "English / Film Studies"
+  },
+  {
+    "iitName": "IIT Madras",
+    "department": "Department of Humanities and Social Sciences",
+    "facultyName": "Mathangi Krishnamurthy",
+    "designation": "Associate Professor",
+    "subjectArea": "Anthropology"
+  },
+  {
+    "iitName": "IIT Madras",
+    "department": "Department of Humanities and Social Sciences",
+    "facultyName": "Satya Sundar Sethy",
+    "designation": "Associate Professor",
+    "subjectArea": "Philosophy"
   }
 ]
